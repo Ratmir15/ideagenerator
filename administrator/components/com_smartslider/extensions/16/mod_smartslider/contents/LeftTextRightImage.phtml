@@ -1,0 +1,35 @@
+<div class="column rightimage" style="margin: {param text "Margin top" "15px"} {param text "Margin right" "25px"} {param text "Margin bottom" "15px"} {param text "Margin left" "25px"};">
+  <div class="col1" style="width: {param text "Width of the first column" "66%" "It can be px or %. For example: 230px or 66%"};">
+    <% if(paramcontentheading != ''){ %>
+      <% if(paramcontentheadingurl != ''){ %>
+      <a target="{param list "Heading target window"}_self,Self,_blank,Blank{/param}" href="{param text "Heading url" "" "If you want to add a link to your heading, just fill this field with an url."}">
+      <% } %>
+        <h3>{param text "Heading" "Sample Heading" "Text to show in the heading"}</h3>
+      <% if(paramcontentheadingurl != ''){ %>
+      </a>
+      <% } %>
+    <% } %>
+    <% if(paramcontentsubheading != ''){ %>
+      <h4>{param text "Subheading" "Sample Subheading" "Text to show in the subheading"}</h4>
+    <% } %>
+    <% if(paramcontentheading != '' || paramcontentsubheading != ''){ %>
+    <div class="hr"></div>
+    <% } %>
+    <p>
+      {param textarea "Content" "Sample Content"}
+    </p>
+    <% if(paramcontentreadmoretext != ''){ %>
+    <a href="{param text "Read more url"}" target="{param list "Read more target window"}_self,Self,_blank,Blank{/param}" class="readmore">{param text "Read more text"}</a>
+    <% } %>
+  </div>
+  <div class="col2" style="width: {param text "Width of the second column" "33%" "It can be px or %. For example: 230px or 33%"};margin-top: {param text "Top margin of the second column" "0px" "Use this parameter to centering the image vertically. It can be px or %, but don't forget to write the unit too."};">
+    <% if(paramcontentlinkforimage != ''){ %>
+    <a href="{param text "Link for image" "" "If you want to add a link to your image, just fill this field with an url."}" target="{param list "Target window"}_self,Self,_blank,Blank{/param}">
+    <% } %>
+      <img src="{param image "Image url"}" <% if(paramcontentimagewidth != ''){ %>width="{param text "Image width" ""}"<% } %> <% if(paramcontentimageheight != ''){ %>height="{param text "Image height" ""}"<% } %> alt="" />
+    <% if(paramcontentlinkforimage != ''){ %>
+    </a>
+    <% } %>
+  </div>
+  <div style="clear:both;"></div>
+</div>

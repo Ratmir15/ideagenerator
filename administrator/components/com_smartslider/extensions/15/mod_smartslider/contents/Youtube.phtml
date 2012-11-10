@@ -1,0 +1,14 @@
+<object id="youtube{param text "Video code" "" "Insert here only the bold text from the url example: http://www.youtube.com/watch?v"}" width="{param text "Video width" "100%" "Just a number! Usually the canvas width."}" height="{param text "Video height" "100%" "Just a number! Usually the canvas height."}">
+  <param name="movie" value="http://www.youtube.com/v/{param text "Video code"}?version=3&amp;enablejsapi=1&amp;hd=1&amp;autohide=1&amp;controls=1&amp;showinfo=0&amp;iv_load_policy=3&amp;theme=dark&amp;rel=0" />
+  <param name="allowFullScreen" value="true" />
+  <param name="allowscriptaccess" value="always" />
+  <param name="wmode" value="opaque" />
+  <embed src="http://www.youtube.com/v/{param text "Video code"}?version=3&amp;enablejsapi=1&amp;hd=1&amp;autohide=1&amp;controls=1&amp;showinfo=0&amp;iv_load_policy=3&amp;theme=dark&amp;ap=%2526fmt%3D18&amp;rel=0" wmode="opaque" type="application/x-shockwave-flash" width="{param text "Video width"}" height="{param text "Video height"}" allowscriptaccess="always" allowfullscreen="true">
+  </embed>
+</object>
+<script type="text/javascript">
+if(!sliderDojo.hasFlash){
+  var node = sliderDojo.byId("youtube{param text "Video code"}");
+  node.parentNode.innerHTML = '<iframe width="{param text "Video width"}" height="{param text "Video height"}" src="http://www.youtube.com/embed/{param text "Video code"}?hd=1&enablejsapi=1&autohide=1&controls=1&showinfo=0&iv_load_policy=3&theme=dark&html5=1&ap=%2526fmt%3D18&rel=0" frameborder="0" allowfullscreen></iframe>';
+}
+</script>

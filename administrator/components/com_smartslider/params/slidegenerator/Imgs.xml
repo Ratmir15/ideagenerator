@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Images from directory</name>
+  <params addPath="/administrator/components/com_smartslider/params">
+    <param name="generatorpath" type="folderlist" directory="images" label="Folder Path" description="Path of the folder" hide_default="1" />
+    <param name="generatorslidenumber" type="text" default="" label="Number of slides" description="Number of the slides"/>
+    <param name="generatorslidegenerate" type="radio" default="0" label="Generates slides" description="Generates the slides">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+  </params>
+  <settings>
+    <component>com_content</component>
+    <allowedtemplates>
+      <allowedtemplate>linkandbackground</allowedtemplate>
+    </allowedtemplates>
+    
+    <editablefields>
+      <editablefield>contentimagewidth</editablefield>
+      <editablefield>contentimageheight</editablefield>
+      <editablefield>contentlinkforimage</editablefield>
+    </editablefields>
+    
+    <deniedfields>
+      <deniedfield>contentbackgroundimageurl</deniedfield>
+    </deniedfields>
+    
+    <contentpositions>
+    
+    </contentpositions>
+    
+    <contentvalues>
+    
+    </contentvalues>
+    <showcaptions>0</showcaptions>
+  
+  </settings>
+</config>

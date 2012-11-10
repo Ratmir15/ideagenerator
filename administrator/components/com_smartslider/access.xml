@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: access.xml 20002 2010-12-27 10:02:03Z infograf768 $ -->
+<access component="com_smartslider">
+	<section name="component">
+    <action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+	</section>
+</access>

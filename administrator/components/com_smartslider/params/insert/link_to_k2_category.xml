@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>K2 item's category</name>
+  <params>
+    <param name="id" type="text" default="" label="Item id" description="The id of the k2 item"/>
+  </params>
+</config>

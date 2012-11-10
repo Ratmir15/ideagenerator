@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Link to category</name>
+  <params>
+    <param name="id" type="text" default="" label="Article id" description="The id of the Article"/>
+  </params>
+</config>

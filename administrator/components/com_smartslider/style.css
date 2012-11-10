@@ -1,0 +1,396 @@
+input, textarea {
+  float: left;
+}
+
+#paramsgeneratorslidegenerate0 {
+  float: none;
+}
+
+#paramsgeneratorslidegenerate1 {
+  float: none;
+}
+
+fieldset.adminform label, fieldset.adminform span.faux-label {
+    max-width: 135px;
+}
+
+div.icon-48-generic {
+    background-image: url("images/adminbig.png");
+}
+
+table.toolbar span.icon-32-savenew,
+div.toolbar-list span.icon-32-savenew{
+    background-image: url("images/savenew.png");
+    width: 39px;
+}
+
+/*Livepreview*/
+
+.livepreview{
+  z-index: 9999;
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  height: 64px;
+  width: 376px;
+}
+
+.livepreview .liveleft {
+  height: 64px;
+  background: url('images/livepreview.png') no-repeat 0 0;
+  padding-left: 13px;
+ width: 363px;
+}
+
+.livepreview .liveright {
+  height: 64px;
+  background: url('images/livepreview.png') no-repeat right -140px;
+  padding-right: 13px;
+  width: 350px;
+}
+
+.livepreview .livecontroll {
+  width: 350px;
+  height: 64px;
+  background: url('images/livepreview.png') repeat-x 0 -70px;
+  position: relative;
+}
+
+.livepreview .livecontroll div{
+  position: absolute;
+}
+
+.livepreview .enable{
+  top: 12px;
+  width: 170px;
+  height: 29px;
+  background: url('images/onoff.png') no-repeat 0 0;
+  cursor: pointer;
+}
+
+.livepreview .enable:HOVER{
+  background-position: 0 -35px;
+}
+
+.livepreview .enable:ACTIVE{
+  background-position: 0 -70px;
+}
+
+.livepreview .disabled{
+  background-position: 0 -105px;
+}
+
+.livepreview .disabled:HOVER{
+  background-position: 0 -140px;
+}
+
+.livepreview .disabled:ACTIVE{
+  background-position: 0 -175px;
+}
+
+.livepreview .refresh{
+  top: 13px;
+  left: 180px;
+  width: 29px;
+  height: 27px;
+  background: url('images/refresh.png') no-repeat 0 0;
+  cursor: pointer;
+}
+
+.livepreview .refresh:HOVER{
+  background-position: 0 -32px;
+}
+
+.livepreview .refresh:ACTIVE{
+  background-position: 0 -64px;
+}
+
+.livepreview .insert {
+  top: 13px;
+  left: 219px;
+  width: 29px;
+  height: 27px;
+  background: url('images/insert.png') no-repeat 0 0;
+}
+
+.livepreview .opened {
+ background-position: 0 -32px;
+}
+
+.livepreview .insert:HOVER{
+  background-position: 0 -32px;
+}
+
+.livepreview .insert:ACTIVE{
+  background-position: 0 -64px;
+}
+
+.livepreview .size{
+  left: 258px;
+  top: 5px;
+  color: #d7d8da;
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.livepreview .size b{
+  font-size: 11px;
+}
+
+.livepreview .livecontroll .footertext {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 10px;
+  color: #0D3A59;
+  top: 50px;
+  text-align: center;
+  width: 340px;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.sliderpreview{
+  position: fixed;
+  bottom: 64px;
+  right: 20px;
+  display: none;
+  z-index: 9998;
+}
+
+/*Insertselector*/
+
+.insertselector {
+  display: none;
+  width: 445px;
+  position: fixed;
+  top: 150px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.insertselector fieldset {
+  border-radius: 8px;
+  background-color: #fff;
+  padding-bottom: 0;
+}
+
+.insertselector .closeinsert {
+  width: 18px;
+  height: 19px;
+  cursor: pointer;
+  position: relative;
+  top: -20px;
+  left: 425px;
+  background: url('images/close.png') no-repeat;
+  float: left;
+}
+
+.insertselector .draginsert {
+  width: 18px;
+  height: 19px;
+  cursor: move;
+  position: relative;
+  top: -20px;
+  left: 385px;
+  background: url('images/drag.png') no-repeat;
+  float: left;
+}
+
+.insertselector .smartinsert {
+  width: 100px;
+  height: 60px;
+  background: url('images/smartinsert.png') no-repeat;
+  float: left;
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+.insertselector .smartinsert.opened{
+  background: url('images/smartinsert-hover.png') no-repeat;
+}
+
+.insertselector .smartinsert:HOVER {
+  background: url('images/smartinsert-hover.png') no-repeat;
+}
+
+.insertselector .smartinsert.ACTIVE {
+  background: url('images/smartinsert-hover.png') no-repeat;
+}
+
+.insertselector .specialinsert {
+  width: 100px;
+  height: 60px;
+  background: url('images/specialinsert.png') no-repeat;
+  float: left;
+  cursor: pointer;
+}
+
+.insertselector .specialinsert.opened{
+  background: url('images/specialinsert-hover.png') no-repeat;
+}
+
+.insertselector .specialinsert:HOVER {
+  background: url('images/specialinsert-hover.png') no-repeat;
+}
+
+.insertselector .specialinsert.ACTIVE {
+  background: url('images/specialinsert-hover.png') no-repeat;
+}
+
+.insertselector .selector {
+  margin-top: 60px;  
+}
+
+.insertselector .noshowfields, .insertselector .noshowvalues, .insertselector .noshowlength {
+  display: none;
+}
+
+/*Inserttext*/
+
+
+.inserttext {
+  font-family: Arial;
+  font-weight: bold;
+  margin-top: 10px;
+  display: none;
+  margin-left: 5px;
+  float: left;
+}
+
+.inserttext_left {
+  float: left;
+}
+
+.inserttext_right {
+  width: 250px;
+  margin-left: 175px; 
+}
+
+/*Insertbutton*/
+
+.insertbutton_left {
+  height: 20px;
+  float: left;
+  padding-left: 3px;
+  cursor: pointer;
+  background: url('images/insertbutton.png') no-repeat 0 0;
+  margin-left: 10px;
+}
+
+.insertbutton_left:HOVER {
+  background: url('images/insertbutton.png') no-repeat 0 -60px;
+}
+
+.insertselector .insertbutton_left {
+  cursor: default;
+  margin-left: 0;
+}
+
+.insertbutton_right {
+  height: 20px;
+  padding-right: 3px;
+  background: url('images/insertbutton.png') no-repeat right -40px;
+}
+
+.insertbutton_left:HOVER .insertbutton_right {
+  background: url('images/insertbutton.png') no-repeat right -100px;
+}
+
+.insertbutton {
+  height: 20px;
+  background: url('images/insertbutton.png') repeat-x 0 -20px;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: #ffffff;
+}
+
+.insertbutton_left:HOVER .insertbutton {
+  background: url('images/insertbutton.png') repeat-x 0 -80px;
+}
+
+/*Help Insertbutton*/
+
+.helpinsertbutton_left {
+  height: 20px;
+  float: left;
+  padding-left: 3px;
+  cursor: default;
+  background: url('images/insertbutton.png') no-repeat 0 0;
+}
+
+.helpinsertbutton_right {
+  height: 20px;
+  padding-right: 3px;
+  background: url('images/insertbutton.png') no-repeat right -40px;
+}
+
+.helpinsertbutton {
+  height: 20px;
+  background: url('images/insertbutton.png') repeat-x 0 -20px;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: #ffffff;
+}
+
+/*Cancelbutton*/
+
+.insertselector .cancelbutton_left {
+  height: 30px;
+  background: url('images/cancelbutton.png') no-repeat 0 0;
+  padding-left: 4px;
+  width: 60px;
+  float: right;
+  cursor: pointer;
+}
+
+.insertselector .cancelbutton_left:HOVER {
+  background: url('images/cancelbutton.png') no-repeat 0 -90px;
+}
+
+.insertselector .cancelbutton_left:ACTIVE {
+  background: url('images/cancelbutton.png') no-repeat 0 -180px;
+}
+
+.insertselector .cancelbutton_right {
+  height: 30px;
+  background: url('images/cancelbutton.png') no-repeat right -60px;
+  padding-right: 4px;
+}
+
+.insertselector .cancelbutton_left:HOVER .cancelbutton_right {
+    background: url('images/cancelbutton.png') no-repeat right -150px;
+}
+
+.insertselector .cancelbutton_left:ACTIVE .cancelbutton_right {
+    background: url('images/cancelbutton.png') no-repeat right -240px;
+}
+
+.insertselector .cancelbutton {
+  height: 30px;
+  display: block;
+  background: url('images/cancelbutton.png') repeat-x 0 -30px;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #ffffff; 
+  line-height: 24px;
+}
+
+.insertselector .cancelbutton_left:HOVER .cancelbutton_right .cancelbutton {
+    background: url('images/cancelbutton.png') repeat-x 0 -120px;
+}
+
+.insertselector .cancelbutton_left:ACTIVE .cancelbutton_right .cancelbutton {
+    background: url('images/cancelbutton.png') repeat-x 0 -210px;
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <params>
+    <param name="theme" type="list" default="elegant" label="Theme" description="">
+    </param>
+  </params>
+</config>

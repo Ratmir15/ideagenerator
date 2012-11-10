@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Easy blog</name>
+  <params addPath="/administrator/components/com_smartslider/params">
+    <param name="generatorcategory" type="sql" default="" label="Category id" description="Id of the category" query="SELECT id AS value, title AS generatorcategory FROM #__easyblog_category"/>
+    <param name="generatorslidenumber" type="text" default="" label="Number of slides" description="Number of the slides"/>
+    <param name="generatororder" type="list" default="" label="Select ordering" description="Select the order of the blog posts">
+      <option value="0">Start with latest</option>
+      <option value="1">End with latest</option>
+    </param>
+    <param name="generatorslidegenerate" type="radio" default="0" label="Generates slides" description="Generates the slides">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+  </params>
+  <settings>
+    <component>com_easyblog</component>
+    <allowedtemplates>
+      <allowedtemplate>onecolumn</allowedtemplate>
+      <allowedtemplate>twocolumn</allowedtemplate>
+      <allowedtemplate>threecolumn</allowedtemplate>
+    </allowedtemplates>
+    
+    <editablefields>
+      <editablefield>contentheadingtargetwindow</editablefield>
+      <editablefield>contentheadingurl</editablefield>
+      <editablefield>contenttagtargetwindow</editablefield>
+      <editablefield>contentreadmoretargetwindow</editablefield>
+      <editablefield>captionheightoftheopenedcaption</editablefield>
+      <editablefield>captionwidthoftheopenedcaption</editablefield>
+      <editablefield>captionshowanimationeasing</editablefield>
+      <editablefield>captionhideanimationeasing</editablefield>
+      <editablefield>captionanimationeasing</editablefield>
+      <editablefield>captionwidthofthetitleinpx</editablefield>
+      <editablefield>captiontopcoordinateofthetag</editablefield>
+      <editablefield>captionhtmleditor</editablefield>
+      <editablefield>captionanimationinterval</editablefield>
+      <editablefield>captionopencaption</editablefield>
+      <editablefield>captioncontentwidth</editablefield>
+      <editablefield>captionfirstpropertytoanimate</editablefield>
+      <editablefield>captiontagfirstpropertystartvalue</editablefield>
+      <editablefield>captiontagfirstpropertytargetvalue</editablefield>
+      <editablefield>captioncontentfirstpropertystartvalue</editablefield>
+      <editablefield>captioncontentfirstpropertytargetvalue</editablefield>
+      <editablefield>captionsecondpropertytoanimate</editablefield>
+      <editablefield>captiontagsecondpropertystartvalue</editablefield>
+      <editablefield>captiontagsecondpropertytargetvalue</editablefield>
+      <editablefield>captioncontentsecondpropertystartvalue</editablefield>
+      <editablefield>captioncontentsecondpropertytargetvalue</editablefield>
+      <editablefield>captionthirdstaticproperty</editablefield>
+      <editablefield>captiontagthirdpropertyvalue</editablefield>
+      <editablefield>captioncontentthirdpropertyvalue</editablefield>
+      <editablefield>captiontaganimationinterval</editablefield>
+      <editablefield>captiontaganimationdelay</editablefield>
+      <editablefield>captiontaganimationeasing</editablefield>
+      <editablefield>captioncontentanimationinterval</editablefield>
+      <editablefield>captioncontentanimationdelay</editablefield>
+      <editablefield>captioncontentanimationeasing</editablefield>
+    </editablefields>
+    
+    <deniedfields>      
+    </deniedfields>
+    
+    <contentpositions>
+      <contentposition>Slide title</contentposition>
+      <contentposition>Content Heading</contentposition>
+      <contentposition>Content Subheading</contentposition>
+      <contentposition>Content First tag url</contentposition>
+      <contentposition>Content First tag text</contentposition>
+      <contentposition>Content Second tag url</contentposition>
+      <contentposition>Content Second tag text</contentposition>
+      <contentposition>Content Third tag url</contentposition>
+      <contentposition>Content Third tag text</contentposition>
+      <contentposition>Content First column content</contentposition>
+      <contentposition>Content Second column content</contentposition>
+      <contentposition>Content Third column content</contentposition>
+      <contentposition>Content Read more url</contentposition>
+      <contentposition>Content Read more text</contentposition>
+    </contentpositions>
+    
+    <contentvalues>
+      <title type="easyblog_post" insert="0">Title</title>
+      <intro type="easyblog_post" insert="0">Intro</intro>
+      <content type="easyblog_post" insert="0">Content</content>
+      <linktoeasyblog type="link_to_easyblog" insert="1">Link to Easy blog</linktoeasyblog>
+      <linktoeasyblogcategory type="link_to_easyblog_category" insert="1">Link to Easy blog category</linktoeasyblogcategory>
+    </contentvalues>
+    
+    <captionpositions>
+    <captionposition>Caption Tag</captionposition>
+      <captionposition>Caption Caption Title</captionposition>
+      <captionposition>Caption Description</captionposition>
+    </captionpositions>
+    
+    <showcaptions>1</showcaptions>
+    <showtitle>1</showtitle>
+    
+    <defaultcontents>
+      <slidetitle>title</slidetitle>
+      <contentheading>title</contentheading>
+      <contentfirstcolumncontent>intro</contentfirstcolumncontent>
+    </defaultcontents>
+    
+    <defaultcaptions>
+    </defaultcaptions>
+    
+  </settings>
+</config>

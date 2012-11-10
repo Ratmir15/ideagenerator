@@ -1,0 +1,150 @@
+
+/*@media  (max-width: 1024px) {
+.moduletable_menu ul li a {
+    font: bold 14px Calibri;
+}
+#form-login-inputs input[type="text"], #form-login-inputs input[type="password"] {
+    margin: 0 !important;
+}
+}*/
+
+/* ----------------------------------------------------------------------------- */
+
+@media  (max-width: 799px) {
+.moduletable_menu .nav {
+  margin: 38px 0 0 !important;
+}
+}
+
+/* ------------------------------------------------------------------------------ */
+
+@media (min-width: 779px) and  (max-width: 1150px) {
+  #grey {
+    width: 930px;
+    margin: 0 auto
+  }
+
+  #grey .img-circle {
+    height: 159px;
+    margin: 20px 0 40px 2.7%;
+    width: 159px;
+}
+  #grey h1 {
+    font-size: 70px;
+}
+#grey .inner-gr, #grey .inner-hidden {
+    width: 159px;
+}
+#grey .inner-gr {
+    padding-top: 15px;
+    font: 16px 'CuprumFFURegular';
+}
+.inner-hidden {
+    font: 13px Calibri;
+    padding: 40px 0 25px;
+}
+
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+@media (min-width: 779px) and (max-width: 1024px) {
+  .moduletable_menu ul li a {
+    font: bold 14px Calibri;
+}
+#form-login-inputs input[type="text"], #form-login-inputs input[type="password"] {
+    margin: 0 !important;
+}
+  .item-page-home {
+    clear:both;
+  }
+.user2.span2.pull-right.leftmenu {
+    float: left;
+    margin: 0 12% 0 6% !important;
+}
+.user3.span6.pull-right.slider {
+    float: none;
+}
+.on-blue > li a.btn-primary {
+    font-size: 15px;
+}
+.on-blue > li a {
+    font-size: 16px;
+}
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+@media (max-width: 480px) {
+.moduletable_menu .nav {
+    min-width: 405px;
+}
+  .moduletable_menu ul li a {
+    font: bold 15px Calibri;
+}
+.user2.span2.pull-right.leftmenu {
+    border: 1px solid #CCCCCC;
+    padding: 5px 0 5px 25px;
+    width: 180px;
+}
+.on-blue > li {
+    width: 50%;
+}
+
+.on-blue > li a {
+    font-size: 12px;
+}
+ul.nav-footer li {
+  float: none !important;
+  padding: 0
+}
+
+ul.nav-footer li:before {
+    content: "" !important;
+}
+.logo .moduletable_menu .nav {
+  min-width: 420px
+}
+
+ .user8 {
+ display: none !important;
+ }
+}
+/* ------------------------------------------------------------------------------- */
+
+@media (min-width: 1070px) and (max-width: 1260px) {
+
+ .user9 {
+    width: 40% !important;
+    margin: 0 0 0 9% !important
+ }
+}
+
+@media (min-width: 778px) and (max-width: 1040px) {
+
+ .user9 {
+    width: 33% !important;
+    margin: 0 0 0 18% !important
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

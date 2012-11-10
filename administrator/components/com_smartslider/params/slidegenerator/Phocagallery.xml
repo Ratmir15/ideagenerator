@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Phocagallery images by category id</name>
+  <params addPath="/administrator/components/com_smartslider/params">
+    <param name="generatorcategory" type="sql" default="" label="Category id" description="Id of the category" query="SELECT id AS value, title AS generatorcategory FROM #__phocagallery_categories"/>
+    <param name="generatorslidenumber" type="text" default="" label="Number of slides" description="Number of the slides"/>
+    <param name="generatorslidegenerate" type="radio" default="0" label="Generates slides" description="Generates the slides">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+  </params>
+  <settings>
+    <component>com_phocagallery</component>
+    <allowedtemplates>
+      <allowedtemplate>linkandbackground</allowedtemplate>
+      <allowedtemplate>lefttextrightimage</allowedtemplate>
+      <allowedtemplate>leftimagerighttext</allowedtemplate>
+    </allowedtemplates>
+    
+    <editablefields>
+      <editablefield>contentimagewidth</editablefield>
+      <editablefield>contentimageheight</editablefield>
+    </editablefields>
+    
+    <deniedfields>
+      <deniedfield>contentbackgroundimageurl</deniedfield>
+      <deniedfield>contentlinkforimage</deniedfield>
+    </deniedfields>
+    
+    <contentpositions>
+      <contentposition>Slide title</contentposition>
+      <contentposition>Content Link for image</contentposition>
+      <contentposition>Content Image url</contentposition>
+      <contentposition>Content Heading</contentposition>
+      <contentposition>Content Subheading</contentposition>
+      <contentposition>Content Read more url</contentposition>
+      <contentposition>Content Read more text</contentposition>
+      <contentposition>Content Content</contentposition>
+    </contentpositions>
+    
+    <contentvalues>
+      <title type="phocagallery" insert="0">Title</title>
+      <description type="phocagallery" insert="0">Description</description>
+      <imgurl type="phocagallery_linktoimg" insert="1">Image url</imgurl>
+    </contentvalues>
+    
+    <captionpositions>
+    <captionposition>Caption Tag</captionposition>
+      <captionposition>Caption Caption Title</captionposition>
+      <captionposition>Caption Description</captionposition>
+    </captionpositions>
+    
+    <showcaptions>1</showcaptions>
+    <showtitle>1</showtitle>
+    
+    <defaultcontents>
+      <slidetitle>title</slidetitle>
+      <contentimageurl>imgurl</contentimageurl>
+    </defaultcontents>
+    
+    <defaultcaptions>
+    
+    </defaultcaptions>
+    
+  </settings>
+</config>

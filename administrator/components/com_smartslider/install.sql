@@ -1,0 +1,43 @@
+CREATE TABLE IF NOT EXISTS `#__offlajn_slide` (
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(150) NOT NULL,
+  `content` text NOT NULL,
+  `caption` text NOT NULL,
+  `ordering` int(11) NOT NULL,
+  `groupprev` int(1) NOT NULL default '0',
+  `icon` varchar(255) NOT NULL,
+  `slider` int(11) NOT NULL default '0',
+  `published` tinyint(3) NOT NULL default '0',
+  `created` datetime NOT NULL,
+  `created_by` int(11) NOT NULL default '0',
+  `created_by_alias` varchar(255) NOT NULL,
+  `modified` datetime NOT NULL,
+  `modified_by` int(11) NOT NULL default '0',
+  `checked_out` int(11) NOT NULL,
+  `checked_out_time` datetime NOT NULL,
+  `publish_up` datetime NOT NULL,
+  `publish_down` datetime NOT NULL,
+  `params` text NOT NULL,
+  `access` tinyint(4) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `#__offlajn_slider` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(150) NOT NULL,
+  `type` varchar(100) NOT NULL,
+  `theme` varchar(100) NOT NULL,
+  `published` tinyint(3) NOT NULL default '0',
+  `created` datetime NOT NULL,
+  `created_by` int(11) NOT NULL default '0',
+  `created_by_alias` varchar(255) NOT NULL,
+  `modified` datetime NOT NULL,
+  `modified_by` int(11) NOT NULL default '0',
+  `checked_out` int(11) NOT NULL,
+  `checked_out_time` datetime NOT NULL,
+  `publish_up` datetime NOT NULL,
+  `publish_down` datetime NOT NULL,
+  `params` text NOT NULL,
+  `access` tinyint(4) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;

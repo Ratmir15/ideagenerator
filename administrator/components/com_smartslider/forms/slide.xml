@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Slide Configuration XML</name>
+  <params addPath="/administrator/components/com_smartslider/params">
+    <param name="title" type="text" default="" label="Slide Title" description="The title of the slide"/>
+    <param name="published" type="list" default="1" label="Published" description="">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+		<param name="publish_up" type="calendar" default="" label="Start Publishing" description="" />
+		<param name="publish_down" type="calendar" default="" label="Finish Publishing" description="" />
+    <param type="ordering" name="ordering" label="Slide ordering" default="" />
+    <param name="groupprev" type="list" default="0" label="Group to previous slide" description="Example: to create vertical slider in a horizontal slider.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="icon" type="imageradio" default="" label="Slide icon" description="You can upload more in the media manager. Directory: images/slidericons" directory="images/slidericons" exclude="" stripext="" hide_default="true" />
+    <param type="spacer" />
+    <param type="spacertext" name="slidername" label="Slider name" default="" />
+    <param type="spacertext" name="type" label="Slider type" default="" />
+    <param type="spacertext" name="theme" label="Slider theme" default="" />
+    <param type="smartinsert" name="" label="" description=""  />
+    <param type="specialinsert" name="" label="" description="" />
+  </params>
+  
+  <params addPath="/administrator/components/com_smartslider/params" group="content">
+    <param name="content" type="templatelist" folder="../../../contents" editor="contenteditorparams" default="blank" label="Choose a template" description="" canvas="fixed" imgext="png" />
+  </params>
+  
+  <params addPath="/administrator/components/com_smartslider/params" group="caption">
+    <param name="caption" type="templatelist" folder="../../../captions" editor="captioneditorparams" default="nocaption" label="Choose a template" description="" imgext="gif" />
+  </params>
+</config>

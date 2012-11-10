@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Accordion Horizontal Elegant Theme</name>
+  <params>
+    <param name="skin" theme="accordion_horizontal_elegant" type="skin" default="" size="5" label="Skin" description="">
+      <darkblue>
+        <outerbordercolor>3E3E3E</outerbordercolor>
+        <innerbordercolor>222222</innerbordercolor>
+        <bgcolor>ffffff</bgcolor>
+        <tabbg>3E3E3E</tabbg>
+        <selectedtabbg>188DD9</selectedtabbg>
+        <tabfont>*Latin|*Arial, Helvetica|*Open Sans|*14px|*1|*0|*E4EAEE|*1|*0px|*1px|*1px|*000000</tabfont>
+        <selectedtabfont>*Latin|*Arial, Helvetica|*Open Sans|*14px|*1|*0|*222222|*0|*0px|*0px|*1px|*ffffff</selectedtabfont>
+        <headingfont>*Latin|*Arial, Helvetica|*PT Sans|*30px|*1|*0|*188DD9|*0|*0px|*0px|*0px|*ffffff</headingfont>
+        <subheadingfont>*Latin|*Arial, Helvetica|*PT Sans|*15px|*0|*1|*3E3E3E|*0|*0px|*0px|*0px|*ffffff</subheadingfont>
+        <paragraphfont>*Latin|*Arial, Helvetica|*PT Sans|*14px|*0|*0|*3E3E3E|*0|*0px|*0px|*0px|*ffffff</paragraphfont>
+        <linkfont>*Latin|*Arial, Helvetica|*PT Sans|*14px|*0|*0|*188DD9|*0|*0px|*0px|*0px|*ffffff</linkfont>
+        <tagfont>*Latin|*Arial, Helvetica|*PT Sans|*12px|*1|*0|*E4EAEE|*1|*1px|*1px|*1px|*000000</tagfont>
+        <smallreadmorefont>*0|*Verdana, Arial, Helvetica|*|*11px|*0|*0|*188DD9|*0|*0px|*0px|*0px|*ffffff</smallreadmorefont>
+        <bigreadmorefont>*Latin|*Arial, Helvetica|*PT Sans|*12px|*1|*0|*E4EAEE|*1|*1px|*1px|*1px|*000000</bigreadmorefont>
+        <captiontagfont>*0|*Arial, Helvetica|*|*10px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captiontagfont>
+        <captiontitlefont>*Latin|*Arial, Helvetica|*PT Sans|*24px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captiontitlefont>
+        <captionparagraphfont>*Latin|*Arial, Helvetica|*PT Sans|*13px|*0|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captionparagraphfont>
+        <captionlinkfont>*Latin|*Arial, Helvetica|*PT Sans|*13px|*0|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captionlinkfont>
+        <slidenumberfont>*Latin|*Arial, Helvetica|*Open Sans|*11px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</slidenumberfont>
+      </darkblue>
+      <darkgreen>
+        <outerbordercolor>3E3E3E</outerbordercolor>
+        <innerbordercolor>222222</innerbordercolor>
+        <bgcolor>ffffff</bgcolor>
+        <tabbg>3E3E3E</tabbg>
+        <selectedtabbg>87b801</selectedtabbg>
+        <tabfont>*Latin|*Arial, Helvetica|*Open Sans|*14px|*1|*0|*E4EAEE|*1|*0px|*1px|*1px|*000000</tabfont>
+        <selectedtabfont>*Latin|*Arial, Helvetica|*Open Sans|*14px|*1|*0|*222222|*0|*0px|*0px|*1px|*ffffff</selectedtabfont>
+        <headingfont>*Latin|*Arial, Helvetica|*PT Sans|*30px|*1|*0|*87b801|*0|*0px|*0px|*0px|*ffffff</headingfont>
+        <subheadingfont>*Latin|*Arial, Helvetica|*PT Sans|*15px|*0|*1|*3E3E3E|*0|*0px|*0px|*0px|*ffffff</subheadingfont>
+        <paragraphfont>*Latin|*Arial, Helvetica|*PT Sans|*14px|*0|*0|*3E3E3E|*0|*0px|*0px|*0px|*ffffff</paragraphfont>
+        <linkfont>*Latin|*Arial, Helvetica|*PT Sans|*14px|*0|*0|*87b801|*0|*0px|*0px|*0px|*ffffff</linkfont>
+        <tagfont>*Latin|*Arial, Helvetica|*PT Sans|*12px|*1|*0|*E4EAEE|*1|*1px|*1px|*1px|*000000</tagfont>
+        <smallreadmorefont>*0|*Verdana, Arial, Helvetica|*|*11px|*0|*0|*87b801|*0|*0px|*0px|*0px|*ffffff</smallreadmorefont>
+        <bigreadmorefont>*Latin|*Arial, Helvetica|*PT Sans|*12px|*1|*0|*E4EAEE|*1|*1px|*1px|*1px|*000000</bigreadmorefont>
+        <captiontagfont>*0|*Arial, Helvetica|*|*10px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captiontagfont>
+        <captiontitlefont>*Latin|*Arial, Helvetica|*PT Sans|*24px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captiontitlefont>
+        <captionparagraphfont>*Latin|*Arial, Helvetica|*PT Sans|*13px|*0|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captionparagraphfont>
+        <captionlinkfont>*Latin|*Arial, Helvetica|*PT Sans|*13px|*0|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captionlinkfont>
+        <slidenumberfont>*Latin|*Arial, Helvetica|*Open Sans|*11px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</slidenumberfont>
+      </darkgreen>
+      <darkorange>
+        <outerbordercolor>3E3E3E</outerbordercolor>
+        <innerbordercolor>222222</innerbordercolor>
+        <bgcolor>ffffff</bgcolor>
+        <tabbg>3E3E3E</tabbg>
+        <selectedtabbg>fb7400</selectedtabbg>
+        <tabfont>*Latin|*Arial, Helvetica|*Open Sans|*14px|*1|*0|*E4EAEE|*1|*0px|*1px|*1px|*000000</tabfont>
+        <selectedtabfont>*Latin|*Arial, Helvetica|*Open Sans|*14px|*1|*0|*222222|*0|*0px|*0px|*1px|*ffffff</selectedtabfont>
+        <headingfont>*Latin|*Arial, Helvetica|*PT Sans|*30px|*1|*0|*fb7400|*0|*0px|*0px|*0px|*ffffff</headingfont>
+        <subheadingfont>*Latin|*Arial, Helvetica|*PT Sans|*15px|*0|*1|*3E3E3E|*0|*0px|*0px|*0px|*ffffff</subheadingfont>
+        <paragraphfont>*Latin|*Arial, Helvetica|*PT Sans|*14px|*0|*0|*3E3E3E|*0|*0px|*0px|*0px|*ffffff</paragraphfont>
+        <linkfont>*Latin|*Arial, Helvetica|*PT Sans|*14px|*0|*0|*fb7400|*0|*0px|*0px|*0px|*ffffff</linkfont>
+        <tagfont>*Latin|*Arial, Helvetica|*PT Sans|*12px|*1|*0|*E4EAEE|*1|*1px|*1px|*1px|*000000</tagfont>
+        <smallreadmorefont>*0|*Verdana, Arial, Helvetica|*|*11px|*0|*0|*fb7400|*0|*0px|*0px|*0px|*ffffff</smallreadmorefont>
+        <bigreadmorefont>*Latin|*Arial, Helvetica|*PT Sans|*12px|*1|*0|*E4EAEE|*1|*1px|*1px|*1px|*000000</bigreadmorefont>
+        <captiontagfont>*0|*Arial, Helvetica|*|*10px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captiontagfont>
+        <captiontitlefont>*Latin|*Arial, Helvetica|*PT Sans|*24px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captiontitlefont>
+        <captionparagraphfont>*Latin|*Arial, Helvetica|*PT Sans|*13px|*0|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captionparagraphfont>
+        <captionlinkfont>*Latin|*Arial, Helvetica|*PT Sans|*13px|*0|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captionlinkfont>
+        <slidenumberfont>*Latin|*Arial, Helvetica|*Open Sans|*11px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</slidenumberfont>
+      </darkorange>
+      <darkred>
+        <outerbordercolor>3E3E3E</outerbordercolor>
+        <innerbordercolor>222222</innerbordercolor>
+        <bgcolor>ffffff</bgcolor>
+        <tabbg>3E3E3E</tabbg>
+        <selectedtabbg>bd161f</selectedtabbg>
+        <tabfont>*Latin|*Arial, Helvetica|*Open Sans|*14px|*1|*0|*E4EAEE|*1|*0px|*1px|*1px|*000000</tabfont>
+        <selectedtabfont>*Latin|*Arial, Helvetica|*Open Sans|*14px|*1|*0|*222222|*0|*0px|*0px|*1px|*ffffff</selectedtabfont>
+        <headingfont>*Latin|*Arial, Helvetica|*PT Sans|*30px|*1|*0|*bd161f|*0|*0px|*0px|*0px|*ffffff</headingfont>
+        <subheadingfont>*Latin|*Arial, Helvetica|*PT Sans|*15px|*0|*1|*3E3E3E|*0|*0px|*0px|*0px|*ffffff</subheadingfont>
+        <paragraphfont>*Latin|*Arial, Helvetica|*PT Sans|*14px|*0|*0|*3E3E3E|*0|*0px|*0px|*0px|*ffffff</paragraphfont>
+        <linkfont>*Latin|*Arial, Helvetica|*PT Sans|*14px|*0|*0|*bd161f|*0|*0px|*0px|*0px|*ffffff</linkfont>
+        <tagfont>*Latin|*Arial, Helvetica|*PT Sans|*12px|*1|*0|*E4EAEE|*1|*1px|*1px|*1px|*000000</tagfont>
+        <smallreadmorefont>*0|*Verdana, Arial, Helvetica|*|*11px|*0|*0|*bd161f|*0|*0px|*0px|*0px|*ffffff</smallreadmorefont>
+        <bigreadmorefont>*Latin|*Arial, Helvetica|*PT Sans|*12px|*1|*0|*E4EAEE|*1|*1px|*1px|*1px|*000000</bigreadmorefont>
+        <captiontagfont>*0|*Arial, Helvetica|*|*10px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captiontagfont>
+        <captiontitlefont>*Latin|*Arial, Helvetica|*PT Sans|*24px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captiontitlefont>
+        <captionparagraphfont>*Latin|*Arial, Helvetica|*PT Sans|*13px|*0|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captionparagraphfont>
+        <captionlinkfont>*Latin|*Arial, Helvetica|*PT Sans|*13px|*0|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captionlinkfont>
+        <slidenumberfont>*Latin|*Arial, Helvetica|*Open Sans|*11px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</slidenumberfont>
+      </darkred>   
+      <darkpurple>
+        <outerbordercolor>3E3E3E</outerbordercolor>
+        <innerbordercolor>222222</innerbordercolor>
+        <bgcolor>ffffff</bgcolor>
+        <tabbg>3E3E3E</tabbg>
+        <selectedtabbg>823FCD</selectedtabbg>
+        <tabfont>*Latin|*Arial, Helvetica|*Open Sans|*14px|*1|*0|*E4EAEE|*1|*0px|*1px|*1px|*000000</tabfont>
+        <selectedtabfont>*Latin|*Arial, Helvetica|*Open Sans|*14px|*1|*0|*222222|*0|*0px|*0px|*1px|*ffffff</selectedtabfont>
+        <headingfont>*Latin|*Arial, Helvetica|*PT Sans|*30px|*1|*0|*823FCD|*0|*0px|*0px|*0px|*ffffff</headingfont>
+        <subheadingfont>*Latin|*Arial, Helvetica|*PT Sans|*15px|*0|*1|*3E3E3E|*0|*0px|*0px|*0px|*ffffff</subheadingfont>
+        <paragraphfont>*Latin|*Arial, Helvetica|*PT Sans|*14px|*0|*0|*3E3E3E|*0|*0px|*0px|*0px|*ffffff</paragraphfont>
+        <linkfont>*Latin|*Arial, Helvetica|*PT Sans|*14px|*0|*0|*823FCD|*0|*0px|*0px|*0px|*ffffff</linkfont>
+        <tagfont>*Latin|*Arial, Helvetica|*PT Sans|*12px|*1|*0|*E4EAEE|*1|*1px|*1px|*1px|*000000</tagfont>
+        <smallreadmorefont>*0|*Verdana, Arial, Helvetica|*|*11px|*0|*0|*823FCD|*0|*0px|*0px|*0px|*ffffff</smallreadmorefont>
+        <bigreadmorefont>*Latin|*Arial, Helvetica|*PT Sans|*12px|*1|*0|*E4EAEE|*1|*1px|*1px|*1px|*000000</bigreadmorefont>
+        <captiontagfont>*0|*Arial, Helvetica|*|*10px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captiontagfont>
+        <captiontitlefont>*Latin|*Arial, Helvetica|*PT Sans|*24px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captiontitlefont>
+        <captionparagraphfont>*Latin|*Arial, Helvetica|*PT Sans|*13px|*0|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captionparagraphfont>
+        <captionlinkfont>*Latin|*Arial, Helvetica|*PT Sans|*13px|*0|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</captionlinkfont>
+        <slidenumberfont>*Latin|*Arial, Helvetica|*Open Sans|*11px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000</slidenumberfont>
+      </darkpurple>          
+    </param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="outerbordercolor" alpha="1" type="color" default="#3E3E3E" label="Outer border color" description="" />
+    <param name="innerbordercolor" alpha="1" type="color" default="#222222" label="Inner border color" description="" />
+    <param name="bgcolor" alpha="1" type="color" default="#ffffff" label="Canvas background color" description="" />
+    <param name="tabbg" type="color" default="#3E3E3E" label="Tab background color" description="" />
+    <param name="tabfont" type="font" default="*Latin|*Arial, Helvetica|*Open Sans|*14px|*1|*0|*E4EAEE|*1|*0px|*1px|*1px|*000000" label="Tab font" description="" />
+    <param name="selectedtabbg" type="color" default="#188DD9" label="Selected tab background color" description="" />
+    <param name="selectedtabfont" type="font" default="*Latin|*Arial, Helvetica|*Open Sans|*14px|*1|*0|*222222|*1|*0px|*0px|*1px|*ffffff" label="Selected tab font" description="" />
+    <param name="textshadow" type="list" default="1" label="Text shadow" description="">
+			<option value="0">No</option>
+    	<option value="1">Yes</option>
+    </param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="headingfont" type="font" default="*Latin|*Arial, Helvetica|*PT Sans|*30px|*1|*0|*188DD9|*0|*0px|*0px|*0px|*ffffff" label="Heading font" description="" />
+    <param name="subheadingfont" type="font" default="*Latin|*Arial, Helvetica|*PT Sans|*15px|*0|*1|*3E3E3E|*0|*0px|*0px|*0px|*ffffff" label="Subheading font" description="" />
+    <param name="paragraphfont" type="font" default="*Latin|*Arial, Helvetica|*PT Sans|*14px|*0|*0|*3E3E3E|*0|*0px|*0px|*0px|*ffffff" label="Paragraph font" description="" />
+    <param name="linkfont" type="font" default="*Latin|*Arial, Helvetica|*PT Sans|*14px|*0|*0|*188DD9|*0|*0px|*0px|*0px|*ffffff" label="Link font" description="" />
+    <param name="tagfont" type="font" default="*Latin|*Arial, Helvetica|*PT Sans|*12px|*1|*0|*E4EAEE|*1|*1px|*1px|*1px|*000000" label="Tag font" description="" />
+    <param name="smallreadmorefont" type="font" default="*0|*Verdana, Arial, Helvetica|*|*11px|*0|*0|*188DD9|*0|*0px|*0px|*0px|*ffffff" label="Small read more font" description="" />
+    <param name="bigreadmorefont" type="font" default="*Latin|*Arial, Helvetica|*PT Sans|*12px|*1|*0|*E4EAEE|*1|*1px|*1px|*1px|*000000" label="Big read more font" description="" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="captiontagfont" type="font" default="*0|*Arial, Helvetica|*|*10px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000" label="Caption tag font" description="" />
+    <param name="captiontitlefont" type="font" default="*Latin|*Arial, Helvetica|*PT Sans|*24px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000" label="Caption title font" description="" />
+    <param name="captionparagraphfont" type="font" default="*Latin|*Arial, Helvetica|*PT Sans|*13px|*0|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000" label="Caption paragraph font" description="" />
+    <param name="captionlinkfont" type="font" default="*Latin|*Arial, Helvetica|*PT Sans|*13px|*0|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000" label="Caption link font" description="" />
+    <param name="slidenumberfont" type="font" default="*Latin|*Arial, Helvetica|*Open Sans|*11px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000" label="Subslide numbers font" description="" />
+  </params>
+</config>

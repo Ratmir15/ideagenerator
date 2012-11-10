@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Virtuemart Product Price</name>
+  <params>
+    <param name="id" type="text" default="" label="Product id" description="The id of the Virtuemart Product"/>
+  </params>
+</config>

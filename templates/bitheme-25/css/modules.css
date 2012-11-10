@@ -1,0 +1,418 @@
+
+/* Верхнее меню */
+
+.moduletable_menu .nav {
+  margin: 38px 0 0 11% !important;
+  min-width: 365px;
+}
+.moduletable_menu ul li:before {
+ content: "|";
+}
+.moduletable_menu ul li:first-child:before {
+ content: "";
+}
+.moduletable_menu ul li a {
+    display: inline;
+    color: #798FAD !important;
+    font: bold 18px Calibri;
+    padding: 0 8px 0 6px !important;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #5d96c8 !important;
+    text-decoration: underline !important;
+}
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    color: #5d96c8 !important;
+    text-decoration: underline !important;
+}
+
+.logo .moduletable_menu .nav {
+  margin: 5px 0 0 !important;
+  min-width: 480px
+}
+
+/* Вход на сайт */
+.moduletable-login #login-form {
+ margin: 35px 0 0 0 !important;
+}
+
+#form-login-inputs input[type="text"], #form-login-inputs input[type="password"] {
+    margin: 0 20px 0 0;
+}
+
+#form-login-remember label {
+  display: inline;
+}
+#form-login-remember label, #form-login-remember a {
+    color: #424242;
+    font: 13px Calibri !important;
+}
+#form-login-remember a {
+  text-decoration: underline;
+  margin: 0 0 0 20px
+}
+
+#modlgn-remember {
+    margin: 0 0 0 4px;
+    position: relative;
+    top: -1px;
+}
+
+/* Круги на серой полосе */
+
+.moduletable-grey h3 {
+  color: #5d96c8;
+  font-size: 28px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+#grey {
+  width: 100%
+}
+
+#grey .img-circle {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    float: left;
+    height: 218px;
+    margin: 20px 0 40px 35px;
+    overflow: hidden;
+    position: relative;
+    width: 218px;
+}
+#grey .img-circle:first-child {
+  margin-left: 0;
+}
+
+#grey h1 {
+    color: #4996C4;
+    font-size: 90px;
+    margin-bottom: -7px;
+    text-align: center;
+}
+#grey .inner-gr  p {
+  padding: 0 30px
+}
+
+#grey .inner-gr, #grey .inner-hidden {
+  position: absolute;
+  width: 218px;
+}
+
+#grey .inner-gr {
+   font: 20px 'CuprumFFURegular';
+   color: #5d96c8;
+   text-align: center;
+   padding-top: 45px;
+}
+.inner-hidden {
+    color: #5D96C8;
+    display: none;
+    font: 15px Calibri;
+    padding: 75px 0 40px;
+    text-align: center;
+    z-index: 1;
+}
+.img-circle:hover > .inner-hidden {
+  display: block;
+}
+.img-circle:hover > .inner-gr {
+  display: none;
+}
+
+
+
+/* Левое меню Смотрите также*/
+
+.moduletable-leftmenu {
+    margin: 0 0 0 -18px;
+}
+.moduletable-leftmenu h3 {
+    color: #4C586F;
+    font: bold 20px/1 Calibri;
+    margin: 0 0 10px;
+}
+ul.nav-left {
+    list-style: none outside none;
+    margin: 0;
+}
+ul.nav-left li {
+ color: #4C586F;
+}
+
+ul.nav-left li:before {
+  content: "- "
+}
+ul.nav-left li:hover:before {
+  content: "";
+  padding: 0 0 0 8.5px
+}
+ul.nav-left li a {
+ color: #4C586F;
+ font: 16px Calibri
+}
+ul.nav-left li a:hover {
+  color: #5d96c8
+}
+
+/* Слайдер на Главной */
+
+
+#mod_smartslider_90 {
+    margin: 8px auto 0;
+}
+
+#mod_smartslider_90 .outer {
+    background: none transparent;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: none;
+    height: 190px;
+    padding: 0;
+}
+ul.slides {
+    left: 1px !important;
+    position: relative !important;
+}
+
+.dots {
+  display: none;
+}
+
+#mod_smartslider_90 .controll {
+    background : none transparent;
+    border: none;
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#mod_smartslider_90 .controllbtn {
+    box-shadow:  none;
+    cursor: pointer;
+    width: 22px;
+}
+
+#mod_smartslider_90 .controll .up {
+    border: 0 none;
+    left: -7px;
+    padding: 32px 13px 10px 0;
+    position: absolute;
+    top: 74px;
+}
+
+
+#mod_smartslider_90 .controll .down {
+    border: 0 none;
+    bottom: -74px;
+    left: 460px;
+    padding: 20px 0;
+    position: absolute;
+}
+
+#mod_smartslider_90 .controll .up:hover, #mod_smartslider_90 .controll .down:hover,
+#mod_smartslider_90 .controll .up:active, #mod_smartslider_90 .controll .down:active {
+ background-color: transparent;
+ border: none;
+ box-shadow: none
+}
+
+#mod_smartslider_90 .slinner .slides div {
+    border-radius: 8px 8px 8px 8px !important;
+}
+#mod_smartslider_90 .caption {
+    color: #FFFFFF;
+    display: block !important;
+    margin: 40px 30px 0;
+    width: 420px;
+}
+#mod_smartslider_90 .caption h2 {
+  font-size: 50px;
+  text-align: center;
+}
+#mod_smartslider_90 .caption h4 {
+  font-size: 40px;
+}
+#mod_smartslider_90 .caption h4 span {
+  font-size: 30px;
+}
+
+#mod_smartslider_90 .caption h4 em {
+    font-size: 25px;
+    font-style: normal;
+    margin: 0 0 0 113px;
+}
+
+#mod_smartslider_90 .caption p {
+  font-size: 30px;
+  text-align: center;
+}
+
+#mod_smartslider_90 .caption span {
+  font-size: 25px;
+}
+#mod_smartslider_90 .black {
+  color: #252c3a
+}
+#mod_smartslider_90 p.sec {
+    padding: 0 0 0 68px;
+    text-align: left;
+}
+
+/* Меню на голубой полосе */
+
+.on-blue {
+    list-style: none outside none;
+}
+.on-blue > li {
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+.on-blue > li a {
+    color: #525252;
+    text-decoration: none;
+    font-size: 20px
+}
+.on-blue > li a.btn-primary {
+    border: 1px solid #3164B2;
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 30px;
+    margin: -15px 0 0;
+    padding: 8px 60px;
+    width: auto;
+}
+
+
+
+/* Копирайт  и нижнее меню*/
+
+.footer {
+    color: #808080;
+    padding: 11px 0 0;
+}
+.footer > p {
+    float: left;
+}
+.footer p a {
+  color: #808080;
+  text-decoration: underline;
+}
+ ul.nav-footer {
+    float: right;
+    list-style: none outside none;
+    padding: 10px 0 0;
+}
+ ul.nav-footer li {
+ float: left;
+ }
+ ul.nav-footer li a {
+    padding: 0 8px 0 6px;
+ }
+ ul.nav-footer li:before {
+   content: "|";
+ }
+ ul.nav-footer li:first-child:before {
+   content: "";
+ }
+ ul.nav-footer li:first-child a {
+ border-left: none;
+ }
+
+ ul.nav-footer li a:link, ul.nav-footer li a:visited, ul.nav-footer li a:active {
+  color: #808080;
+ }
+ ul.nav-footer li a:hover, ul.nav-footer li.active a {
+  color: #4c586f;
+  text-decoration: underline;
+ }
+
+/* Слайдеры новостей*/
+
+.user5 > div {
+  width: 780px;
+  margin: 0 auto
+}
+.moduletable-moreidea h3 {
+  margin: 0 10px 10px !important;
+}
+
+/* Модуль поиска */
+
+.search .button {
+    background: url("../images/searchButton.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: transparent;
+    font-size: 0;
+    height: 27px;
+    margin: -10px 0 0 -30px;
+    width: 17px;
+}
+
+.search label {
+    display: inline;
+    font-size: 18px;
+    margin: 0 10px 0 40px;
+}
+#mod-search-searchword {
+    border-color: #BDC0C9;
+    border-radius: 10px 10px 10px 10px;
+    height: 25px;
+}
+
+/* Модуль комментарии экспертов */
+
+.moduletable-comments h3, #comments h4, .moduletable-moreidea h3, .moduletable-news h3 {
+    border-radius: 6px 6px 0 0;
+    color: #FFFFFF;
+    display: inline;
+    font-size: 18px;
+    margin: 0;
+    padding: 7px 10px 8px;
+}
+.jcomments-latest-comments {
+    background: none repeat scroll 0 0 #F1F1F2;
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 20px 10px;
+}
+.jcomments-latest-comments li .userAvatar {
+    float: left;
+    width: 19%;
+}
+.jcomments-latest-comments li .comment {
+    float: left;
+    font-size: 11px;
+    line-height: 1.1;
+    margin: 0 0 8px;
+    width: 80%;
+}
+
+/* Модуль новостей */
+
+.newsflash-news {
+    background: none repeat scroll 0 0 #FFFFFF;
+    font: 11px Calibri;
+    padding: 10px 5px;
+}
+.newsflash-news h4 {
+    font-size: 13px;
+}
+
+.newsflash-news p, .newsflash-news h4 {
+  margin: 0
+}
+
+
+
+
+

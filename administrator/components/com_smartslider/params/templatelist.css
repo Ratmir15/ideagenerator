@@ -1,0 +1,40 @@
+.miniimage{
+  width: 100px;
+  height: 60px;
+  float:left;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.editashtml{
+  background: transparent url('images/editashtml.png') no-repeat 0 0;
+  display: block;
+  width: 117px;
+  height: 30px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.editashtml:HOVER{
+  background-position: 0 -60px;
+}
+
+.editashtml:ACTIVE{
+  background-position: 0 -30px;
+}
+
+#contenteditorparams{
+  position: relative;
+}
+
+.bubble{
+  position: absolute;
+  left: 600px;
+  top: 0;
+  background: transparent url('images/infobubble.png') no-repeat 0 0;
+  width: 195px;
+  height: 75px;
+  padding: 10px 5px 0 25px;
+  color: #fff;
+  text-align: left;
+}

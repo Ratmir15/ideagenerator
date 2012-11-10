@@ -1,0 +1,20 @@
+<div class="frombottom animated">
+  <div class="opener"></div>
+  <div class="content">
+    <h3>{param text "Caption title"}</h3>
+    <p>
+    {param textarea "Description"}
+    </p>
+  </div>
+</div>
+<script type="text/javascript">
+var caption = {
+  type: "frombottom",
+  value: {param text "Height of the opened caption" "200" "Just a number in pixel."},
+  interval: {param text "Animation interval" "400"},
+  showEasing: "{param easing "Show animation easing"}",
+  hideEasing: "{param easing "Hide animation easing"}",
+  delay: {param text "Animation delay" "0" "in ms"},
+  showcaption :{param list "Open caption"}0,No,1,Yes{/param}
+};
+</script>

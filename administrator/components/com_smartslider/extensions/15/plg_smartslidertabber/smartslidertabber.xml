@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="plugin" group="system" version="1.5" method="upgrade">
+	<name>System - Smart Slider Tabber</name>
+	<description>PLG_TABBER_DESCRIPTION</description>
+	<version>1.1.0</version>
+	<creationDate>September 2011</creationDate>
+	<author>Roland Soos</author>
+	<authorEmail>roland.soos@offlajn.com</authorEmail>
+	<authorUrl>http://offlajn.com</authorUrl>
+	<copyright>Copyright (C) 2011 Offlajn.com. All rights reserved.</copyright>
+  <license>GNU General Public License</license>
+
+	<!-- Files -->
+	<files>
+		<filename plugin="smartslidertabber">smartslidertabber.php</filename>
+		<filename>smartslidertabber.xml</filename>
+	</files>
+
+	<!-- Parameters -->
+	<params></params>
+</install>

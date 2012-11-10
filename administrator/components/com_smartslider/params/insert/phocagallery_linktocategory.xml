@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Link to Phocagallery category</name>
+  <params>
+    <param name="id" type="text" default="" label="image id" description="The id of the image"/>
+  </params>
+</config>

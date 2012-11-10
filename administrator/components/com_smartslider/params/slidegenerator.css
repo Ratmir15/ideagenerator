@@ -1,0 +1,129 @@
+.selectdiv {
+  margin-bottom: 20px;
+  display: block;
+  margin-left: 18px;
+  clear: both;
+}
+
+.selectdiv textarea {
+  margin-left: 5px;
+  width: 163px;
+  margin-bottom: 3px;
+}
+
+.selectdiv select {
+  width: 165px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.selectdiv .limiter {
+  float: none;
+  margin-left: 10px;
+  width: 30px;
+}
+
+.selectdiv .limiterlbl {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.plusbuttons {
+  clear: both;
+}
+
+.plusbutton_left {
+  height: 25px;
+  float: left;
+  background: url("../images/add_button.png") no-repeat 0 0;
+  cursor: pointer;
+  padding-left: 24px;
+}
+
+.plusbutton_right {
+  height: 25px;
+  background: url("../images/add_button.png") no-repeat right -60px;
+  padding-right: 24px;
+}
+
+.plusbutton_center {
+  height: 25px;
+  background: url("../images/add_button.png") repeat-x 0 -30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  text-shadow: 1px 1px 0px #375E01;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff; 
+}
+
+.plusbutton_left:HOVER {
+  background: url("../images/add_button.png") no-repeat 0 -90px;
+}
+
+.plusbutton_left:HOVER .plusbutton_right {
+  background: url("../images/add_button.png") no-repeat right -150px;
+}
+
+.plusbutton_left:HOVER .plusbutton_center {
+  background: url("../images/add_button.png") repeat-x 0 -120px;
+}
+
+.plusbutton_left:ACTIVE {
+  background: url("../images/add_button.png") no-repeat 0 -180px;
+}
+
+.plusbutton_left:ACTIVE .plusbutton_right {
+  background: url("../images/add_button.png") no-repeat right -240px;
+}
+
+.plusbutton_left:ACTIVE .plusbutton_center {
+  background: url("../images/add_button.png") repeat-x 0 -210px;
+}
+
+.minusbutton {
+  float: left;
+  height: 25px;
+  width: 25px;
+  background: url("../images/remove_button.png") no-repeat 0 0;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.minusbutton:HOVER {
+  background: url("../images/remove_button.png") no-repeat 0 -30px;
+}
+
+.minusbutton:ACTIVE {
+  background: url("../images/remove_button.png") no-repeat 0 -60px;
+}
+
+#captions {
+  clear: both;
+  padding-top: 10px;
+}
+
+#titleform {
+  margin-left: 45px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #666;
+  font-weight: bold;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #E9E9E9;
+  border-right: 1px solid #E9E9E9;
+}
+
+#titleform select {
+  color: #000;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.defaultbutton {
+  float: right;
+  margin-right: 300px;
+}

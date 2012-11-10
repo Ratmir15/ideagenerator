@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="smartslider" method="upgrade">
+<name>Smartslider - SmartSliderInsert</name>
+<author>Jeno Kovacs</author>
+<creationDate>Oct 2011</creationDate>
+<copyright>Copyright (C) 2011 Offlajn.com. All rights reserved.</copyright>
+<license>GNU General Public License</license>
+<authorEmail>jeno.kovacs@offlajn.com</authorEmail>
+<authorUrl>http://offlajn.com</authorUrl>
+<version>1.2.1</version>
+<description>Embed values from specified database table to smartslider content.</description>
+<files>
+    <filename plugin="smartsliderinsert">smartsliderinsert.php</filename>
+    <filename>smartsliderinsert.xml</filename>
+</files>
+<params>
+</params>
+</install>

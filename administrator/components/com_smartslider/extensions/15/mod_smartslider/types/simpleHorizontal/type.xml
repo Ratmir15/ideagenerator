@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Simple horizontal type settings</name>
+  <params>
+    <param name="width" type="text" default="485" label="Slider width (px)" description=""/>
+    <param name="height" type="text" default="300" label="Slider height (px)" description=""/>
+    <param name="transition" type="list" default="1" label="Transition" description="">
+      <option value="1">Sliding</option>
+      <option value="2">Fading</option>
+    </param>
+    <param name="ctrlbtn" type="list" default="1" label="Control buttons" description="">
+      <option value="0">Disabled</option>
+      <option value="1">Enabled</option>
+    </param>
+    <param name="ctrlbar" type="list" default="1" label="Control bar" description="">
+      <option value="0">Disabled</option>
+      <option value="1">Enabled</option>
+    </param>
+    <param name="mousescroll" type="list" default="1" label="Mouse scroll" description="">
+      <option value="0">Disabled</option>
+      <option value="1">Enabled</option>
+    </param>
+    <param name="autoplay" type="list" default="0" label="Autoplay" description="">
+      <option value="0">Disabled</option>
+      <option value="1">Enabled</option>
+    </param>
+    <param name="autoplayinterval" type="text" default="5000" label="Autoplay time interval (ms)" description=""/>
+     <param name="restartautoplay" type="list" default="0" label="Restart autoplay when mouse leave" description="">
+      <option value="0">Disabled</option>
+      <option value="1">Enabled</option>
+      <option value="2">Never stop autoplay</option>
+    </param>
+    <param name="maininterval" type="text" default="400" label="Main animation interval (ms)" description=""/>
+    <param name="maineasing" type="easing" default="dojo.fx.easing.cubicInOut" hide_none="true" label="Main animation easing" description=""/>
+    <param name="shadow" type="imagelist" default="" label="Slider shadow" description="" directory="modules/mod_smartslider/images/shadows" exclude="" stripext="" hide_default="true" />
+  </params>
+</config>

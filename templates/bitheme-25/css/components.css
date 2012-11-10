@@ -1,0 +1,41 @@
+
+.item-page-home h2 {
+ color: #4c586f;
+ font: bold 20px/1 Calibri
+}
+
+.item-page h2 {
+ color: #4c586f;
+ font-size: 24px;
+}
+.content-links {
+ display: none;
+}
+.item-page p {
+  padding: 0 5px
+}
+
+/* Комментарии */
+
+a.refresh, #comments-footer {
+    display: none !important;
+}
+.rbox > div {
+  background:
+}
+#comments-list {
+    background: none repeat scroll 0 0 #F1F1F2;
+    margin: 10px 0 5px;
+    padding: 5px 0 0;
+}
+.rbox_m {
+    font-size: 11px;
+    line-height: 1.1;
+    padding: 0 10px 10px;
+}
+.commHeader {
+    float: left;
+    height: 40px;
+    margin: 0 0 0 10px;
+    width: 40px;
+}

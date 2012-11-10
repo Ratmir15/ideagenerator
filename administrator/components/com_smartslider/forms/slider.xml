@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Slider Configuration XML</name>
+  <params addPath="/administrator/components/com_smartslider/params">
+    <param name="name" type="text" default="" label="Slider Name" description="The name of the Slider"/>
+    <param name="published" type="list" default="1" label="Published" description="">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="addslides" type="text" default="1" label="Add slides (number)" description=""/>
+    <param name="random" type="list" default="0" label="Randomize slides" description="">
+      <option value="0">Disabled</option>
+      <option value="1">Enabled</option>
+    </param>
+    <param name="type" type="slidertype" default="horizontal" label="Slider Type" description="The type of the Slider"/>
+    <param name="iscache" type="list" default="1" label="Cache slides" description="If you enabled slides will be cached and it will work faster">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="cacheinterval" type="text" default="" label="Cache expires (minutes)" description="Set the expiration of the cache in minute"/>
+
+  </params>
+  <params addPath="/administrator/components/com_smartslider/params" group="generator">
+    <param name="generator" type="slidegenerator" default="choose" label="Slide generator" description="Slidegenerator"/>
+  </params>
+</config>

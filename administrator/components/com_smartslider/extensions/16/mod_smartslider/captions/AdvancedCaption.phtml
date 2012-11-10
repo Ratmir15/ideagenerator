@@ -1,0 +1,42 @@
+<div class="simple animated">
+<% if(paramcaptiontag != ''){ %>
+  <h4>{param text "Tag"}</h4>
+<% } %>
+  <div class="h3">
+    <% if(paramcaptioncaptiontitle != ''){ %>
+    <h3 <% if(paramcaptiondescription != ''){ %>style="padding-bottom: 6px;"<% } %>>{param text "Caption title"}</h3>
+    <% } %>
+    <% if(paramcaptiondescription != ''){ %>
+    <p <% if(paramcaptioncaptiontitle != ''){ %>style="padding-top: 6px;"<% } %>>{param textarea "Description"}</p>
+    <% } %>
+  </div>
+</div>
+<script type="text/javascript">
+var caption = {
+  type: "simple",
+  contentWidth: {param text "Content width" "200" "Just a value! In pixel."},
+  firstProp: "{param list "First property to animate"}0,No animation,left,Left,right,Right,opacity,Opacity{/param}",
+  tagStartX: {param text "Tag first property start value" "548" "Just a value!"},
+  tagTargetX: {param text "Tag first property target value" "400" "Just a value!"},
+  titleStartX: {param text "Content first property start value" "548" "Just a value!"},
+  titleTargetX: {param text "Content first property target value" "400" "Just a value!"},
+  
+  secondProp: "{param list "Second property to animate"}0,No animation,top,Top,bottom,Bottom,opacity,Opacity{/param}",
+  tagStartY: {param text "Tag second property start value" "300" "Just a value!"},
+  tagTargetY: {param text "Tag second property target value" "300" "Just a value!"},
+  titleStartY: {param text "Content second property start value" "300" "Just a value!"},
+  titleTargetY: {param text "Content second property target value" "300" "Just a value!"},
+  
+  
+  thirdProp: "{param list "Third static property"}0,No,left,Left,right,Right,top,Top,bottom,Bottom,opacity,Opacity{/param}",
+  tagStartThird: {param text "Tag third property value" "300" "Just a value!"},
+  titleStartThird: {param text "Content third property value" "300" "Just a value!"},
+  
+  tagInterval: {param text "Tag animation interval" "1000"},
+  tagDelay: {param text "Tag animation delay" "0"},
+  tagEasing: "{param easing "Tag animation easing"}",
+  titleInterval: {param text "Content animation interval" "1000"},
+  titleDelay: {param text "Content animation delay" "0"},
+  titleEasing: "{param easing "Content animation easing"}"
+};
+</script>

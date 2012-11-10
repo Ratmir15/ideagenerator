@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Menu item link</name>
+  <params>
+    <param name="id" type="menuitem" default="" label="Menu item id" description="The id of the menu item"/>
+  </params>
+</config>

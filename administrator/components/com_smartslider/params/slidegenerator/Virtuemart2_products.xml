@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Virtuemart products by category</name>
+  <params addPath="/administrator/components/com_smartslider/params">
+    <param name="generatorcategory" type="vm2categories" default="" label="Product categories" description="Id of the category"/>
+    <param name="generatorslidenumber" type="text" default="" label="Number of slides" description="Number of the slides"/>
+    <param name="generatorslidegenerate" type="radio" default="0" label="Generates slides" description="Generates the slides">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+  </params>
+  <settings>
+  <component>com_virtuemart</component>
+  <version>2</version>
+    <allowedtemplates>
+      <allowedtemplate>onecolumn</allowedtemplate>
+      <allowedtemplate>twocolumn</allowedtemplate>
+      <allowedtemplate>threecolumn</allowedtemplate>
+      <allowedtemplate>leftproductrightdescription</allowedtemplate>
+      <allowedtemplate>leftdescriptionrightproduct</allowedtemplate>
+    </allowedtemplates>
+    
+    <editablefields>
+      <editablefield>contentheadingtargetwindow</editablefield>
+      <editablefield>contentheadingurl</editablefield>
+      <editablefield>contenttagtargetwindow</editablefield>
+      <editablefield>contentreadmoretargetwindow</editablefield>
+      <editablefield>captionheightoftheopenedcaption</editablefield>
+      <editablefield>captionwidthoftheopenedcaption</editablefield>
+      <editablefield>captionshowanimationeasing</editablefield>
+      <editablefield>captionhideanimationeasing</editablefield>
+      <editablefield>captionanimationeasing</editablefield>
+      <editablefield>captionwidthofthetitleinpx</editablefield>
+      <editablefield>captiontopcoordinateofthetag</editablefield>
+      <editablefield>captionhtmleditor</editablefield>
+      <editablefield>captionanimationinterval</editablefield>
+      <editablefield>captionopencaption</editablefield>
+      <editablefield>captioncontentwidth</editablefield>
+      <editablefield>captionfirstpropertytoanimate</editablefield>
+      <editablefield>captiontagfirstpropertystartvalue</editablefield>
+      <editablefield>captiontagfirstpropertytargetvalue</editablefield>
+      <editablefield>captioncontentfirstpropertystartvalue</editablefield>
+      <editablefield>captioncontentfirstpropertytargetvalue</editablefield>
+      <editablefield>captionsecondpropertytoanimate</editablefield>
+      <editablefield>captiontagsecondpropertystartvalue</editablefield>
+      <editablefield>captiontagsecondpropertytargetvalue</editablefield>
+      <editablefield>captioncontentsecondpropertystartvalue</editablefield>
+      <editablefield>captioncontentsecondpropertytargetvalue</editablefield>
+      <editablefield>captionthirdstaticproperty</editablefield>
+      <editablefield>captiontagthirdpropertyvalue</editablefield>
+      <editablefield>captioncontentthirdpropertyvalue</editablefield>
+      <editablefield>captiontaganimationinterval</editablefield>
+      <editablefield>captiontaganimationdelay</editablefield>
+      <editablefield>captiontaganimationeasing</editablefield>
+      <editablefield>captioncontentanimationinterval</editablefield>
+      <editablefield>captioncontentanimationdelay</editablefield>
+      <editablefield>captioncontentanimationeasing</editablefield>
+    </editablefields>
+    
+    <deniedfields>      
+    </deniedfields>
+    
+    <contentpositions>
+      <contentposition>Slide title</contentposition>
+      <contentposition>Content Heading</contentposition>
+      <contentposition>Content Subheading</contentposition>
+      <contentposition>Content First tag url</contentposition>
+      <contentposition>Content First tag text</contentposition>
+      <contentposition>Content Second tag url</contentposition>
+      <contentposition>Content Second tag text</contentposition>
+      <contentposition>Content Third tag url</contentposition>
+      <contentposition>Content Third tag text</contentposition>
+      <contentposition>Content First column content</contentposition>
+      <contentposition>Content Second column content</contentposition>
+      <contentposition>Content Third column content</contentposition>
+      <contentposition>Content Read more url</contentposition>
+      <contentposition>Content Read more text</contentposition>
+      <contentposition>Content Image url</contentposition>
+      <contentposition>Content Content</contentposition>
+    </contentpositions>
+    
+    <contentvalues>
+      <product_s_desc type="virtuemart_products_" insert="0">Short description</product_s_desc>
+      <product_desc type="virtuemart_products_" insert="0">Description</product_desc>
+      <product_name type="virtuemart_products_" insert="0">Name</product_name>
+      <price type="virtuemart2_product_price" insert="1">Product price</price>
+      <image type="vm2_link_to_img" insert="1">Product image</image>
+      <linktocategory type="vm2_link_to_category" insert="1">Link to category</linktocategory>
+      <nameofcategory type="vm2_name_of_category" insert="1">Name of category</nameofcategory>
+      <linktoproduct type="vm2_link_to_product" insert="1">Link to product</linktoproduct>
+    </contentvalues>
+    
+    <captionpositions>
+    <captionposition>Caption Tag</captionposition>
+      <captionposition>Caption Caption Title</captionposition>
+      <captionposition>Caption Description</captionposition>
+    </captionpositions>
+    
+    <showcaptions>1</showcaptions>
+    <showtitle>1</showtitle>
+    
+    <defaultcontents>
+      <slidetitle>product_name</slidetitle>
+      <contentheading>product_name</contentheading>
+      <contentfirstcolumncontent>product_s_desc</contentfirstcolumncontent>
+    </defaultcontents>
+    
+    <defaultcaptions>
+      <captioncaptiontitle>title</captioncaptiontitle>
+    </defaultcaptions>
+    
+  </settings>
+</config>

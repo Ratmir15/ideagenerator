@@ -1,0 +1,58 @@
+<div class="column onecolumn" style="margin: {param text "Margin top" "15px"} {param text "Margin right" "25px"} {param text "Margin bottom" "15px"} {param text "Margin left" "25px"};">
+  <% if(paramcontentheading != ''){ %>
+    <% if(paramcontentheadingurl != ''){ %>
+    <a target="{param list "Heading target window"}_self,Self,_blank,Blank{/param}" href="{param text "Heading url" "" "If you want to add a link to your heading, just fill this field with an url."}">
+    <% } %>
+      <h3>{param text "Heading" "Sample Heading" "Text to show in the heading"}</h3>
+    <% if(paramcontentheadingurl != ''){ %>
+    </a>
+    <% } %>
+  <% } %>
+  <% if(paramcontentsubheading != ''){ %>
+    <h4>{param text "Subheading" "Sample Subheading" "Text to show in the subheading"}</h4>
+  <% } %>
+  <ul class="tags">
+    <% if(paramcontentfirsttagtext != ''){ %>
+    <li>
+      <% if(paramcontentfirsttagurl != ''){ %>
+      <a target="{param list "Tag target window"}_self,Self,_blank,Blank{/param}" href="{param text "First tag url"}">
+      <% } %>
+        <span><span>{param text "First tag text" "Sample Tag"}</span></span>
+      <% if(paramcontentfirsttagurl != ''){ %>
+      </a>
+      <% } %>
+    </li>
+    <% } %>
+    <% if(paramcontentsecondtagtext != ''){ %>
+    <li>
+      <% if(paramcontentsecondtagurl != ''){ %>
+      <a target="{param list "Tag target window"}_self,Self,_blank,Blank{/param}" href="{param text "Second tag url"}">
+      <% } %>
+        <span><span>{param text "Second tag text"}</span></span>
+      <% if(paramcontentsecondtagurl != ''){ %>
+      </a>
+      <% } %>
+    </li>
+    <% } %>
+        <% if(paramcontentthirdtagtext != ''){ %>
+    <li>
+      <% if(paramcontentthirdtagurl != ''){ %>
+      <a target="{param list "Tag target window"}_self,Self,_blank,Blank{/param}" href="{param text "Third tag url"}">
+      <% } %>
+        <span><span>{param text "Third tag text"}</span></span>
+      <% if(paramcontentthirdtagurl != ''){ %>
+      </a>
+      <% } %>
+    </li>
+    <% } %>
+  </ul>
+  <% if(paramcontentheading != '' || paramcontentsubheading != ''){ %>
+  <div class="hr"></div>
+  <% } %>
+  <p>
+    {param textarea "First column content" "Sample Content"}
+  </p>
+  <% if(paramcontentreadmoretext != ''){ %>
+  <a href="{param text "Read more url"}" target="{param list "Read more target window"}_self,Self,_blank,Blank{/param}" class="readmore">{param text "Read more text" "Sample Read More"}</a>
+  <% } %>
+</div>

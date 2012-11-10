@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <name>Name of the virtuemart category</name>
+  <params>
+    <param name="id" type="text" default="" label="product id" description="The id of the product"/>
+  </params>
+</config>
