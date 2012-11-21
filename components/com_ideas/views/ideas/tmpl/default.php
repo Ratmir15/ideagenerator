@@ -5,9 +5,9 @@ defined('_JEXEC') or die('Restricted access');
 <form action="index.php?option=com_ideas" method="post" name="adminForm" id="adminForm">
     <table class="adminlist" width="100%">
         <tr>
-            <th><?php echo JText::_('CGCA USERNAME'); ?></th>
-            <th><?php echo JText::_('CGCA NICK'); ?></th>
-            <th><?php echo JText::_('CGCA PASS'); ?></th>
+            <th>Название</th>
+            <th>Автор</th>
+            <th>Регион</th>
         </tr>
         <?php if ($this->rows):
         foreach ($this->rows as $i => $row): ?>
@@ -20,7 +20,7 @@ defined('_JEXEC') or die('Restricted access');
         endforeach;
     else: ?>
         <tr>
-            <td colspan="15"><?php echo JText::_('CGCA NO DATA'); ?></td>
+            <td colspan="15">Нет данных</td>
 			<tr>
 		<?php endif; ?>
     </table>

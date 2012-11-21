@@ -16,7 +16,7 @@ defined('_JEXEC') or die('Restricted access');
         endforeach;
     else: ?>
         <tr>
-            <td colspan="15"><?php echo JText::_('CGCA NO DATA'); ?></td>
+            <td colspan="15">Нет данных</td>
 			<tr>
 		<?php endif; ?>
     </table>
