@@ -40,7 +40,18 @@ JHtml::_('behavior.formvalidation');
 				<dd><?php echo $field->input;?></dd>
 			<?php endif;?>
 		<?php endforeach;?>
-			</dl>
+                <dt>Регион</dt><dd><select name="region">
+                <?php
+                $db = JFactory::getDbo();
+                $db->setQuery("select * from #__regions order by id asc");
+                $rows = $db->loadObjectList();
+                for ($i=0; $i<count($rows); $i++) {
+                    $row = $rows[$i];
+                    echo "<option value='$row->id'>$row->name</option>";
+                }
+                ?>
+            </select></dd>
+            </dl>
 		</fieldset>
 	<?php endif;?>
 <?php endforeach;?>
