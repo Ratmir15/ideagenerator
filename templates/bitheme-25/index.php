@@ -12,6 +12,9 @@ $app = JFactory::getApplication();
 		<jdoc:include type="head" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
+<!--[if IE]>
+		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template_ie.css" type="text/css" />
+<![endif]-->
         <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/jquery.js"></script>
 		<script type="text/javascript">
         jQuery.noConflict();
@@ -33,7 +36,7 @@ $app = JFactory::getApplication();
 
 <div id="wrapper" class="container-fluid">
 <div class="row-fluid inner header">
-<div class="span2 logo">
+<div class="span6 logo">
 <div id="logo">
 <a href="/"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/logo.png" width="225" height="120" alt="Твой город" /></a>
 </div>
@@ -49,7 +52,7 @@ $app = JFactory::getApplication();
 </div>
 <?php endif; ?>
 <?php if($this->countModules('login')) : ?>
-<div class="span4">
+<div class="span4 offset2">
 <jdoc:include type="modules" name="login" style="xhtml" />
 </div>
 <?php endif; ?>
@@ -80,7 +83,8 @@ $app = JFactory::getApplication();
 <jdoc:include type="modules" name="user7" style="xhtml" />
 </div>
 <?php endif; ?>
-<jdoc:include type="component" />
+    <jdoc:include type="message" />
+    <jdoc:include type="component" />
 <?php if($this->countModules('user5')) : ?>
 <div class="row-fluid">
 <div class="user5 span12 hidden-phone">
