@@ -60,8 +60,7 @@ class jtt_tpl_comment extends JoomlaTuneTemplate
 <?php
 				} else {
 ?>
-
-<?php
+                    <?php echo $comment->author; ?><?php if($comment->group_id=="3") {echo "(Эксперт)"; };
 				}
 ?>
 <span class="comment-date"><?php echo JCommentsText::formatDate($comment->date, JText::_('DATETIME_FORMAT')); ?></span>
