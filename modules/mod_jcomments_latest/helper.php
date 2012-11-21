@@ -73,19 +73,31 @@ class modJCommentsLatestHelper
 			$where[] = "c.object_group in ('" . implode("','", $source) . "')";
 		}
 
-		$query = "SELECT c.id, c.userid, c.comment, c.title, c.name, c.username, c.email, c.date, c.object_id, c.object_group, '' as avatar"
+        //$db->setQuery("select * from #__user_usergroup_map", 0, $params->get('count'));
+        //$list = $db->loadObjectList();
+        //echo count($list);
+
+        $input = JFactory::getApplication()->input;
+        $view = $input->get("view");
+        $id = $input->get("id");
+        if (($view=="article") && ($id!="")) {
+            $where[] = "c.object_id=".$id;
+        }
+        $query = "SELECT c.id, c.userid, c.comment, c.title, c.name, c.username, c.email, c.date, c.object_id, c.object_group, '' as avatar"
 			. ", o.title AS object_title, o.link AS object_link, o.access AS object_access, o.userid AS object_owner"
 			. " FROM #__jcomments AS c"
-			. " JOIN #__jcomments_objects AS o ON c.object_id = o.object_id AND c.object_group = o.object_group AND c.lang = o.lang"
+            . " JOIN #__user_usergroup_map AS ug ON c.userid = ug.user_id"
+            . " JOIN #__jcomments_objects AS o ON c.object_id = o.object_id AND c.object_group = o.object_group AND c.lang = o.lang"
 			. (count($joins) ? ' ' . implode(' ', $joins) : '')
 			. (count($where) ? ' WHERE  ' . implode(' AND ', $where) : '')
 			. " ORDER BY " . $orderBy
 			;
-
+        //echo $query;
 		$db->setQuery($query, 0, $params->get('count'));
 		$list = $db->loadObjectList();
+        //echo count($list);
 
-		if (!is_array($list)) {
+        if (!is_array($list)) {
 			$list = array();
 		}
 
