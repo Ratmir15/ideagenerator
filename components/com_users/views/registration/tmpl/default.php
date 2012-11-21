@@ -18,7 +18,7 @@ JHtml::_('behavior.formvalidation');
 	<h1><?php echo $this->escape($this->params->get('page_heading')); ?></h1>
 <?php endif; ?>
 
-	<form id="member-registration" action="<?php echo JRoute::_('index.php?option=com_users&task=registration.register'); ?>" method="post" class="form-validate">
+	<form id="DFDSFSFDSFSFDSFmember-registration" action="<?php echo JRoute::_('index.php?option=com_users&task=registration.register'); ?>" method="post" class="form-validate">
 <?php foreach ($this->form->getFieldsets() as $fieldset): // Iterate through the form fieldsets and display each one.?>
 	<?php $fields = $this->form->getFieldset($fieldset->name);?>
 	<?php if (count($fields)):?>
@@ -41,6 +41,17 @@ JHtml::_('behavior.formvalidation');
 				<dd><?php echo ($field->type!='Spacer') ? $field->input : "&#160;"; ?></dd>
 			<?php endif;?>
 		<?php endforeach;?>
+                <dt>Регион</dt><dd><select name="region">
+                <?php
+            $db = JFactory::getDbo();
+            $db->setQuery("select * from #__regions order by id asc");
+            $rows = $db->loadObjectList();
+            for ($i=0; $i<count($rows); $i++) {
+                $row = $rows[$i];
+                echo "<option value='$row->id'>$row->name</option>";
+            }
+             ?>
+            </select></dd>
 			</dl>
 		</fieldset>
 	<?php endif;?>

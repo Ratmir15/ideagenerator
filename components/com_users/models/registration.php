@@ -339,7 +339,15 @@ class UsersModelRegistration extends JModelForm
 			return false;
 		}
 
-		// Compile the notification mail values.
+        $region = JRequest::getVar('region');
+        $query = "insert into #__user_regions (user_id,region_id) values (".$user->id.",".$region.")";
+        $db->setQuery($query);
+        $db->execute();
+        $query = "insert into #__user_usergroup_map (user_id,group_id) values (".$user->id.",3)";
+        $db->setQuery($query);
+        $db->execute();
+
+        // Compile the notification mail values.
 		$data = $user->getProperties();
 		$data['fromname']	= $config->get('fromname');
 		$data['mailfrom']	= $config->get('mailfrom');
