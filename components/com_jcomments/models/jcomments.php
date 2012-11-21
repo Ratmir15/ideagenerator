@@ -297,13 +297,14 @@ class JCommentsModel
 			$where[] = $filter;
 		}
 
-		$query = "SELECT c.id, c.parent, c.object_id, c.object_group, c.userid, c.name, c.username, c.title, c.comment"
+		$query = "SELECT c.id, c.parent, c.object_id, c.object_group, c.userid, c.name, c.username, c.title, c.comment, uum.group_id"
 				. "\n, c.email, c.homepage, c.date, c.date as datetime, c.ip, c.published, c.deleted, c.checked_out, c.checked_out_time"
 				. "\n, c.isgood, c.ispoor"
 				. ($votes ? "\n, v.value as voted" : "\n, 1 as voted")
 				. "\n, case when c.parent = 0 then unix_timestamp(c.date) else 0 end as threaddate"
 				. ($objectinfo ? "\n, jo.title AS object_title, jo.link AS object_link, jo.access AS object_access" : ", '' AS object_title, '' AS object_link, 0 AS object_access, 0 AS object_owner")
 				. "\nFROM #__jcomments AS c"
+				. "\nLEFT JOIN #__user_usergroup_map AS uum ON c.userid = uum.user_id and uum.group_id=3 "
 				. ($votes ? "\nLEFT JOIN #__jcomments_votes AS v ON c.id = v.commentid " . ($acl->getUserId() ? " AND  v.userid = " . $acl->getUserId() : " AND v.userid = 0 AND v.ip = '" . $acl->getUserIP() . "'") : "")
 				. ($objectinfo ? "\n LEFT JOIN #__jcomments_objects AS jo ON jo.object_id = c.object_id AND jo.object_group = c.object_group AND jo.lang=c.lang" : "")
 				. (count($where) ? ("\nWHERE " . implode(' AND ', $where)) : "")
