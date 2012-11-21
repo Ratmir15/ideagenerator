@@ -49,7 +49,14 @@ class plgContentJoomla extends JPlugin
 		JTable::addIncludePath(JPATH_ADMINISTRATOR.'/components/com_messages/tables');
 
 		$db = JFactory::getDbo();
-		$db->setQuery('SELECT id FROM #__users WHERE sendEmail = 1');
+        $db->setQuery('SELECT region_id from #__user_regions WHERE user_id = '.$user->id);
+        $rows = $db->loadObjectList();
+        for ($i=0;$i<count($rows);$i++) {
+            $db->setQuery('INSERT into #__content_regions (content_id,region_id) values ('.$article->id.','.$rows[$i]->region_id.')');
+            $db->execute();
+        }
+
+        $db->setQuery('SELECT id FROM #__users WHERE sendEmail = 1');
 		$users = (array) $db->loadColumn();
 
 		$default_language = JComponentHelper::getParams('com_languages')->get('administrator');
