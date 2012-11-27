@@ -11,12 +11,13 @@ defined('_JEXEC') or die('Restricted access');
         foreach ($this->rows as $i => $row): ?>
             <tr class="row<?php echo $i % 2; ?>">
                 <td><a href="?option=com_ideas&region=<?php echo $row->id; ?>"><?php echo $row->name; ?></a></td>
+                <td><?php echo $row->cnt; ?></a></td>
             </tr>
             <?php
         endforeach;
     else: ?>
         <tr>
-            <td colspan="15">Нет данных</td>
+            <td colspan="2">Нет данных</td>
 			<tr>
 		<?php endif; ?>
     </table>

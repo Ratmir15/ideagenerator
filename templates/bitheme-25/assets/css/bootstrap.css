@@ -162,7 +162,8 @@ body {
   font-family: Calibri, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #4c586f;
+  /*color: #4c586f;*/
+  color: #3c485f;
   background-color: #ffffff;
 }
 

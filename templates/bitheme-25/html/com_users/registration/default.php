@@ -43,7 +43,7 @@ JHtml::_('behavior.formvalidation');
                 <dt>Регион</dt><dd><select name="region">
                 <?php
                 $db = JFactory::getDbo();
-                $db->setQuery("select * from #__regions order by id asc");
+                $db->setQuery("select * from #__regions order by name asc");
                 $rows = $db->loadObjectList();
                 for ($i=0; $i<count($rows); $i++) {
                     $row = $rows[$i];
