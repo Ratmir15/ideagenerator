@@ -24,9 +24,9 @@ class IdeasModelRegions extends JModel
 
     public function getRegions()
     {
-        $query 	= 'SELECT t1.*'
-            . ' FROM #__regions t1 '
-            . ' ORDER BY t1.name asc';
+        $query 	= 'SELECT t1.id,t1.name,count(cr.content_id) as cnt'
+            . ' FROM #__regions t1 left join #__content_regions cr on t1.id=cr.region_id  '
+            . ' group by t1.id,t1.name ORDER BY t1.name asc';
         $this->_db->setQuery($query);
         $res = $this->_db->loadObjectList();
 
