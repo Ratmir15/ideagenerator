@@ -43,13 +43,21 @@ class IdeasModelIdeas extends JModel
 
     public function getIdeas()
     {
-        $jinput = JFactory::getApplication()->input;
+        $app = JFactory::getApplication();
+        $jinput = $app->input;
+        ;
         $user = $jinput->get("user");
 
         if ($user!=null) {
+            if ($user=="my") {
+                $user = JFactory::getUser()->id;
+                $whereclause = "";
+            } else {
+                $whereclause = "t1.state=1 and ";
+            }
             $query 	= 'SELECT t1.*, t2.username,t4.name'
                 . ' FROM #__content  AS t1, #__content_regions t3, #__regions t4,  #__users  AS t2'
-                . ' WHERE t1.created_by='.$user.' and t1.id=t3.content_id and t3.region_id=t4.id and t2.id = t1.created_by'
+                . ' WHERE '.$whereclause.' t1.created_by='.$user.' and t1.id=t3.content_id and t3.region_id=t4.id and t2.id = t1.created_by'
                 . ' ORDER BY t1.id desc';
             $this->_db->setQuery($query);
             $res = $this->_db->loadObjectList();
@@ -60,7 +68,7 @@ class IdeasModelIdeas extends JModel
         if ($region!=null) {
             $query 	= 'SELECT t1.*, t2.username,t4.name'
                 . ' FROM #__content  AS t1, #__content_regions t3, #__regions t4,  #__users  AS t2'
-                . ' WHERE t3.region_id='.$region.' and t1.id=t3.content_id and t3.region_id=t4.id and t2.id = t1.created_by'
+                . ' WHERE t1.state=1 and t3.region_id='.$region.' and t1.id=t3.content_id and t3.region_id=t4.id and t2.id = t1.created_by'
                 . ' ORDER BY t1.id desc';
             $this->_db->setQuery($query);
             $res = $this->_db->loadObjectList();
@@ -70,7 +78,7 @@ class IdeasModelIdeas extends JModel
 
         $query 	= 'SELECT t1.*, t2.username,t4.name'
             . ' FROM #__content  AS t1, #__content_regions t3, #__regions t4,  #__users  AS t2'
-            . ' WHERE t1.id=t3.content_id and t3.region_id=t4.id and t2.id = t1.created_by'
+            . ' WHERE t1.state=1 and t1.id=t3.content_id and t3.region_id=t4.id and t2.id = t1.created_by'
             . ' ORDER BY t1.id desc';
         $this->_db->setQuery($query);
         $res = $this->_db->loadObjectList();
