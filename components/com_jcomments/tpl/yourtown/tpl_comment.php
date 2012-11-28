@@ -56,7 +56,7 @@ class jtt_tpl_comment extends JoomlaTuneTemplate
 				if ($this->getVar('comment-show-homepage') == 1) {
 ?>
 
-<a class="author-homepage" href="<?php echo $comment->homepage; ?>" rel="nofollow" title="<?php echo $comment->author; ?>"><?php echo $comment->author; ?></a><?php if($comment->group_id=="3") {echo "(Эксперт)"; }; ?>
+<a class="author-homepage" href="<?php echo $comment->homepage; ?>" rel="nofollow" title="<?php echo $comment->author; ?>"><?php echo $comment->author; ?></a><?php if($comment->group_id=="13") {echo "(Эксперт)"; }; ?>
 <?php
 				} else {
 ?>

@@ -59,18 +59,19 @@ endif;
 			</div>
 		<?php endif; ?>
 
-			<div class="formelm-buttons">
-			<button type="button" onclick="Joomla.submitbutton('article.save')">
-				<?php echo JText::_('JSAVE') ?>
-			</button>
-			<button type="button" onclick="Joomla.submitbutton('article.cancel')">
-				<?php echo JText::_('JCANCEL') ?>
-			</button>
-			</div>
 
 			<?php echo $this->form->getInput('articletext'); ?>
 
-	</fieldset>
+        <div class="formelm-buttons">
+            <button type="button" onclick="Joomla.submitbutton('article.save')">
+                <?php echo JText::_('JSAVE') ?>
+            </button>
+            <button type="button" onclick="Joomla.submitbutton('article.cancel')">
+                <?php echo JText::_('JCANCEL') ?>
+            </button>
+        </div>
+
+    </fieldset>
 	<?php if ($params->get('show_urls_images_frontend')  ): ?>
 	<fieldset>
 		<legend><?php echo JText::_('COM_CONTENT_IMAGES_AND_URLS'); ?></legend>
